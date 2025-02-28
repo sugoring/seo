@@ -2,54 +2,67 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <!-- 메인 페이지 -->
   <url>
-    <loc>https://yourdomain.com/</loc>
+    <loc>https://riku-love.vercel.app/</loc>
     <lastmod>2025-02-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://yourdomain.com/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://yourdomain.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://riku-love.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://riku-love.vercel.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://riku-love.vercel.app/"/>
   </url>
   
   <!-- 리쿠 사랑해 메인 URL -->
   <url>
-    <loc>https://yourdomain.com/riku-love</loc>
+    <loc>https://riku-love.vercel.app/riku-love</loc>
     <lastmod>2025-02-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://yourdomain.com/riku-love"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://yourdomain.com/ja/riku-love"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://riku-love.vercel.app/riku-love"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://riku-love.vercel.app/ja/riku-love"/>
+    <news:news>
+      <news:publication>
+        <news:name>리쿠 사랑해</news:name>
+        <news:language>ko</news:language>
+      </news:publication>
+      <news:publication_date>2025-02-28</news:publication_date>
+      <news:title>리쿠 사랑해 - NCT WISH 마에다 리쿠 팬페이지</news:title>
+    </news:news>
   </url>
   
   <!-- NCT WISH 리쿠 관련 URL -->
   <url>
-    <loc>https://yourdomain.com/nct-wish-riku</loc>
+    <loc>https://riku-love.vercel.app/nct-wish-riku</loc>
     <lastmod>2025-02-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://yourdomain.com/images/riku-nct-wish.jpg</image:loc>
+      <image:loc>https://riku-love.vercel.app/images/riku-nct-wish.jpg</image:loc>
       <image:caption>NCT WISH 리쿠(마에다 리쿠) - 메인래퍼, 리드댄서</image:caption>
+      <image:title>NCT WISH 리쿠 - 2003년생 21세 일본 아이돌</image:title>
+      <image:geo_location>일본 후쿠이현</image:geo_location>
     </image:image>
   </url>
   
   <!-- 리쿠 NCT URL -->
   <url>
-    <loc>https://yourdomain.com/riku-nct</loc>
+    <loc>https://riku-love.vercel.app/riku-nct</loc>
     <lastmod>2025-02-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://yourdomain.com/images/riku-nct.jpg</image:loc>
+      <image:loc>https://riku-love.vercel.app/images/riku-nct.jpg</image:loc>
       <image:caption>리쿠 NCT - 2003년생 21세 일본 아이돌</image:caption>
+      <image:title>마에다 리쿠 - NCT WISH 메인래퍼</image:title>
     </image:image>
   </url>
   
   <!-- 리쿠 2003년생 관련 URL -->
   <url>
-    <loc>https://yourdomain.com/riku-2003</loc>
+    <loc>https://riku-love.vercel.app/riku-2003</loc>
     <lastmod>2025-02-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -57,7 +70,7 @@
   
   <!-- 마에다 리쿠 프로필 URL -->
   <url>
-    <loc>https://yourdomain.com/maeda-riku-profile</loc>
+    <loc>https://riku-love.vercel.app/maeda-riku-profile</loc>
     <lastmod>2025-02-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -65,7 +78,7 @@
   
   <!-- 리쿠 일본어 관련 URL -->
   <url>
-    <loc>https://yourdomain.com/riku-japanese</loc>
+    <loc>https://riku-love.vercel.app/riku-japanese</loc>
     <lastmod>2025-02-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -73,7 +86,7 @@
   
   <!-- 리쿠 키/신체 정보 URL -->
   <url>
-    <loc>https://yourdomain.com/riku-height-175cm</loc>
+    <loc>https://riku-love.vercel.app/riku-height-175cm</loc>
     <lastmod>2025-02-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -81,15 +94,23 @@
   
   <!-- 리쿠 건강 회복 관련 URL -->
   <url>
-    <loc>https://yourdomain.com/riku-health-recovery</loc>
+    <loc>https://riku-love.vercel.app/riku-health-recovery</loc>
     <lastmod>2025-02-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
+    <news:news>
+      <news:publication>
+        <news:name>리쿠 사랑해</news:name>
+        <news:language>ko</news:language>
+      </news:publication>
+      <news:publication_date>2025-02-03</news:publication_date>
+      <news:title>NCT WISH 리쿠, 건강 회복 후 2025년 3월부터 활동 재개 예정</news:title>
+    </news:news>
   </url>
   
   <!-- 리쿠 나이 관련 URL -->
   <url>
-    <loc>https://yourdomain.com/riku-age-21</loc>
+    <loc>https://riku-love.vercel.app/riku-age-21</loc>
     <lastmod>2025-02-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -97,22 +118,29 @@
   
   <!-- 리쿠 노래 관련 URL -->
   <url>
-    <loc>https://yourdomain.com/riku-songs</loc>
+    <loc>https://riku-love.vercel.app/riku-songs</loc>
     <lastmod>2025-02-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <video:video>
-      <video:thumbnail_loc>https://yourdomain.com/videos/thumbnails/riku-songbird.jpg</video:thumbnail_loc>
+      <video:thumbnail_loc>https://riku-love.vercel.app/videos/thumbnails/riku-songbird.jpg</video:thumbnail_loc>
       <video:title>NCT WISH 리쿠 - Songbird 직캠</video:title>
       <video:description>NCT WISH 리쿠(마에다 리쿠)의 Songbird 무대 영상</video:description>
-      <video:content_loc>https://yourdomain.com/videos/riku-songbird.mp4</video:content_loc>
+      <video:content_loc>https://riku-love.vercel.app/videos/riku-songbird.mp4</video:content_loc>
       <video:duration>180</video:duration>
+      <video:publication_date>2024-12-25T00:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:tag>리쿠</video:tag>
+      <video:tag>NCT WISH</video:tag>
+      <video:tag>마에다 리쿠</video:tag>
+      <video:tag>Songbird</video:tag>
+      <video:tag>직캠</video:tag>
     </video:video>
   </url>
   
   <!-- 관련 멤버 페이지 (리쿠와 함께 검색되는 멤버) -->
   <url>
-    <loc>https://yourdomain.com/nct-wish-members</loc>
+    <loc>https://riku-love.vercel.app/nct-wish-members</loc>
     <lastmod>2025-02-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -120,17 +148,18 @@
   
   <!-- 일본어 버전 메인 페이지 -->
   <url>
-    <loc>https://yourdomain.com/ja/</loc>
+    <loc>https://riku-love.vercel.app/ja/</loc>
     <lastmod>2025-02-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://yourdomain.com/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://yourdomain.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://riku-love.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://riku-love.vercel.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://riku-love.vercel.app/"/>
   </url>
   
   <!-- 리쿠 관련 태그 페이지 -->
   <url>
-    <loc>https://yourdomain.com/tags/riku</loc>
+    <loc>https://riku-love.vercel.app/tags/riku</loc>
     <lastmod>2025-02-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -138,7 +167,7 @@
   
   <!-- 로봇/게임 리쿠와 구분하기 위한 페이지 -->
   <url>
-    <loc>https://yourdomain.com/not-robot-riku</loc>
+    <loc>https://riku-love.vercel.app/not-robot-riku</loc>
     <lastmod>2025-02-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -146,9 +175,96 @@
   
   <!-- 리쿠 검색어 특화 페이지 -->
   <url>
-    <loc>https://yourdomain.com/riku-search-info</loc>
+    <loc>https://riku-love.vercel.app/riku-search-info</loc>
     <lastmod>2025-02-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  
+  <!-- 리쿠 앨범 페이지 -->
+  <url>
+    <loc>https://riku-love.vercel.app/riku-albums</loc>
+    <lastmod>2025-02-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 리쿠 MBTI 페이지 -->
+  <url>
+    <loc>https://riku-love.vercel.app/riku-mbti-isfp</loc>
+    <lastmod>2025-02-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- 리쿠 출신지 페이지 -->
+  <url>
+    <loc>https://riku-love.vercel.app/riku-fukui-japan</loc>
+    <lastmod>2025-02-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- 리쿠 취미 페이지 -->
+  <url>
+    <loc>https://riku-love.vercel.app/riku-hobbies</loc>
+    <lastmod>2025-02-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- 리쿠 비주얼 페이지 -->
+  <url>
+    <loc>https://riku-love.vercel.app/riku-visual</loc>
+    <lastmod>2025-02-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://riku-love.vercel.app/images/riku-visual.jpg</image:loc>
+      <image:caption>NCT WISH 리쿠 - 비주얼 멤버</image:caption>
+      <image:title>마에다 리쿠 - 청량한 소년미</image:title>
+    </image:image>
+  </url>
+  
+  <!-- 리쿠 가족 관계 페이지 -->
+  <url>
+    <loc>https://riku-love.vercel.app/riku-family</loc>
+    <lastmod>2025-02-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- 리쿠 좌우명 페이지 -->
+  <url>
+    <loc>https://riku-love.vercel.app/riku-motto</loc>
+    <lastmod>2025-02-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- 리쿠 재미있는 사실 페이지 -->
+  <url>
+    <loc>https://riku-love.vercel.app/riku-fun-facts</loc>
+    <lastmod>2025-02-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- 리쿠 일본어 프로필 페이지 -->
+  <url>
+    <loc>https://riku-love.vercel.app/ja/riku-profile</loc>
+    <lastmod>2025-02-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://riku-love.vercel.app/maeda-riku-profile"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://riku-love.vercel.app/ja/riku-profile"/>
+  </url>
+  
+  <!-- 리쿠 팬 활동 페이지 -->
+  <url>
+    <loc>https://riku-love.vercel.app/riku-fan-activities</loc>
+    <lastmod>2025-02-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>
