@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <!-- 메인 페이지 -->
+  <url>
+    <loc>https://yourdomain.com/</loc>
+    <lastmod>2025-02-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yourdomain.com/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://yourdomain.com/ja/"/>
+  </url>
+  
+  <!-- 리쿠 사랑해 메인 URL -->
+  <url>
+    <loc>https://yourdomain.com/riku-love</loc>
+    <lastmod>2025-02-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yourdomain.com/riku-love"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://yourdomain.com/ja/riku-love"/>
+  </url>
+  
+  <!-- NCT WISH 리쿠 관련 URL -->
+  <url>
+    <loc>https://yourdomain.com/nct-wish-riku</loc>
+    <lastmod>2025-02-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://yourdomain.com/images/riku-nct-wish.jpg</image:loc>
+      <image:caption>NCT WISH 리쿠(마에다 리쿠) - 메인래퍼, 리드댄서</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- 리쿠 NCT URL -->
+  <url>
+    <loc>https://yourdomain.com/riku-nct</loc>
+    <lastmod>2025-02-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://yourdomain.com/images/riku-nct.jpg</image:loc>
+      <image:caption>리쿠 NCT - 2003년생 21세 일본 아이돌</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- 리쿠 2003년생 관련 URL -->
+  <url>
+    <loc>https://yourdomain.com/riku-2003</loc>
+    <lastmod>2025-02-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- 마에다 리쿠 프로필 URL -->
+  <url>
+    <loc>https://yourdomain.com/maeda-riku-profile</loc>
+    <lastmod>2025-02-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- 리쿠 일본어 관련 URL -->
+  <url>
+    <loc>https://yourdomain.com/riku-japanese</loc>
+    <lastmod>2025-02-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- 리쿠 키/신체 정보 URL -->
+  <url>
+    <loc>https://yourdomain.com/riku-height-175cm</loc>
+    <lastmod>2025-02-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 리쿠 건강 회복 관련 URL -->
+  <url>
+    <loc>https://yourdomain.com/riku-health-recovery</loc>
+    <lastmod>2025-02-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- 리쿠 나이 관련 URL -->
+  <url>
+    <loc>https://yourdomain.com/riku-age-21</loc>
+    <lastmod>2025-02-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 리쿠 노래 관련 URL -->
+  <url>
+    <loc>https://yourdomain.com/riku-songs</loc>
+    <lastmod>2025-02-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <video:video>
+      <video:thumbnail_loc>https://yourdomain.com/videos/thumbnails/riku-songbird.jpg</video:thumbnail_loc>
+      <video:title>NCT WISH 리쿠 - Songbird 직캠</video:title>
+      <video:description>NCT WISH 리쿠(마에다 리쿠)의 Songbird 무대 영상</video:description>
+      <video:content_loc>https://yourdomain.com/videos/riku-songbird.mp4</video:content_loc>
+      <video:duration>180</video:duration>
+    </video:video>
+  </url>
+  
+  <!-- 관련 멤버 페이지 (리쿠와 함께 검색되는 멤버) -->
+  <url>
+    <loc>https://yourdomain.com/nct-wish-members</loc>
+    <lastmod>2025-02-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- 일본어 버전 메인 페이지 -->
+  <url>
+    <loc>https://yourdomain.com/ja/</loc>
+    <lastmod>2025-02-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yourdomain.com/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://yourdomain.com/ja/"/>
+  </url>
+  
+  <!-- 리쿠 관련 태그 페이지 -->
+  <url>
+    <loc>https://yourdomain.com/tags/riku</loc>
+    <lastmod>2025-02-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- 로봇/게임 리쿠와 구분하기 위한 페이지 -->
+  <url>
+    <loc>https://yourdomain.com/not-robot-riku</loc>
+    <lastmod>2025-02-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- 리쿠 검색어 특화 페이지 -->
+  <url>
+    <loc>https://yourdomain.com/riku-search-info</loc>
+    <lastmod>2025-02-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>

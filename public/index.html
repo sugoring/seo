@@ -1,43 +1,206 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
+
+    <!-- 검색 엔진 최적화 기본 태그 -->
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <meta name="googlebot" content="index, follow" />
+
+    <!-- 주요 SEO 메타 태그 -->
+    <title>
+      리쿠 사랑해 - NCT WISH 엔시티 리쿠 | 2003년생 21세 일본 아이돌
+    </title>
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="리쿠 사랑해. NCT WISH 리쿠(마에다 리쿠)는 2003년 6월 28일생 21세 일본 아이돌입니다. SM엔터테인먼트 소속, 메인래퍼, 175cm, 후쿠이현 출신, 2025년 3월 활동 재개 예정."
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <!-- 추가 SEO 키워드 -->
+    <meta
+      name="keywords"
+      content="리쿠, 리쿠 사랑해, 마에다 리쿠, NCT WISH, 엔시티 위시, Maeda Riku, 리쿠 NCT, NCT 리쿠, 엔시티 리쿠, 2003년생, 21세, 일본 아이돌, 리쿠 나이, 리쿠 키, 175cm, 리쿠 일본어, SM엔터테인먼트, 후쿠이현, 메인래퍼, 라스타트, 健康回復, 2025年活動再開"
+    />
+
+    <!-- 언어 및 지역 태그 -->
+    <meta name="geo.region" content="JP-18" />
+    <meta name="geo.placename" content="Fukui" />
+    <meta http-equiv="content-language" content="ko, ja" />
+
+    <!-- 오픈 그래프 태그 (소셜 미디어 공유용) -->
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="리쿠 사랑해 - NCT WISH 엔시티 리쿠 | 2003년생 일본 아이돌"
+    />
+    <meta
+      property="og:description"
+      content="리쿠 사랑해. NCT WISH 리쿠(마에다 리쿠)는 2003년 6월 28일생 21세, 일본 후쿠이현 출신 아이돌입니다. 2024년 2월 21일 데뷔, 키 175cm, 메인래퍼."
+    />
+    <meta property="og:url" content="https://yourdomain.com/" />
+    <meta property="og:site_name" content="리쿠 사랑해" />
+    <meta property="og:updated_time" content="2025-02-28T12:00:00+00:00" />
+
+    <!-- 트위터 카드 -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="리쿠 사랑해 - NCT WISH 엔시티 리쿠 | 일본 아이돌"
+    />
+    <meta
+      name="twitter:description"
+      content="리쿠 사랑해. 2003년생 21세 NCT WISH 리쿠(前田 陸), 2025년 3월 활동 재개 예정."
+    />
+    <meta name="twitter:label1" content="소속 그룹" />
+    <meta name="twitter:data1" content="NCT WISH (엔시티 위시)" />
+    <meta name="twitter:label2" content="데뷔일" />
+    <meta name="twitter:data2" content="2024년 2월 21일" />
+
+    <!-- 리쿠 관련 검색을 위한 히든 텍스트 -->
+    <noscript>
+      <div style="display: none">
+        리쿠 사랑해 NCT WISH 엔시티 위시 리쿠 마에다 리쿠 Maeda Riku 前田 陸
+        2024년 2월 21일 데뷔 2003년 6월 28일 생 21세 NCT Universe LASTART
+        메인래퍼 리드댄서 일본 후쿠이현 출신 키 175cm AB형 SM엔터테인먼트 소속
+        건강 회복 후 2025년 3월부터 활동 재개 예정 앨범 Wishful Songbird Hands
+        Up Steady 함께 검색되는 멤버 유우시 사쿠야 시온 료 대영 재희 이 페이지는
+        NCT 아이돌 리쿠에 관한 것으로 로봇 리쿠나 게임 캐릭터 리쿠와는 다름
+      </div>
+    </noscript>
+
+    <!-- 구조화된 데이터 추가 -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "마에다 리쿠",
+        "givenName": "리쿠",
+        "familyName": "마에다",
+        "alternateName": [
+          "리쿠",
+          "Maeda Riku",
+          "Riku",
+          "前田 陸",
+          "엔시티 리쿠",
+          "NCT WISH 리쿠"
+        ],
+        "birthDate": "2003-06-28",
+        "birthPlace": {
+          "@type": "Place",
+          "name": "일본 후쿠이현"
+        },
+        "height": "175cm",
+        "gender": "Male",
+        "nationality": "일본",
+        "knowsLanguage": ["일본어", "한국어"],
+        "memberOf": [
+          {
+            "@type": "MusicGroup",
+            "name": "NCT WISH",
+            "parentOrganization": {
+              "@type": "MusicGroup",
+              "name": "NCT"
+            }
+          }
+        ],
+        "worksFor": {
+          "@type": "Organization",
+          "name": "SM엔터테인먼트",
+          "url": "https://www.smentertainment.com"
+        },
+        "jobTitle": ["아이돌", "래퍼", "댄서", "가수"],
+        "description": "2003년생 21세, 2024년 2월 데뷔한 NCT WISH의 메인래퍼, 일본 후쿠이현 출신 K-POP 아이돌. 건강 회복 후 2025년 3월부터 활동 재개 예정.",
+        "sameAs": [
+          "https://namu.wiki/w/리쿠(NCT)",
+          "https://www.youtube.com/channel/UCYIvBSmxCuHUy-60ErRCNlA"
+        ]
+      }
+    </script>
+
+    <!-- 음악 그룹 정보 -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MusicGroup",
+        "name": "NCT WISH",
+        "alternateName": ["엔시티 위시", "WISH"],
+        "foundingDate": "2024-02-21",
+        "member": [
+          {
+            "@type": "Person",
+            "name": "리쿠"
+          },
+          {
+            "@type": "Person",
+            "name": "유우시"
+          },
+          {
+            "@type": "Person",
+            "name": "사쿠야"
+          },
+          {
+            "@type": "Person",
+            "name": "시온"
+          },
+          {
+            "@type": "Person",
+            "name": "료"
+          },
+          {
+            "@type": "Person",
+            "name": "대영"
+          }
+        ],
+        "parentOrganization": {
+          "@type": "MusicGroup",
+          "name": "NCT"
+        },
+        "genre": ["K-pop", "J-pop", "Dance", "Hip hop", "Pop"],
+        "location": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "KR"
+          }
+        }
+      }
+    </script>
+
+    <!-- 웹페이지 정보 -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "리쿠 사랑해 - NCT WISH 엔시티 리쿠 팬페이지",
+        "description": "NCT WISH 리쿠(마에다 리쿠)를 위한 팬페이지. 2003년 6월 28일생 21세 일본 아이돌, 메인래퍼, 리드댄서.",
+        "datePublished": "2025-02-28",
+        "dateModified": "2025-02-28",
+        "inLanguage": ["ko", "ja"],
+        "about": {
+          "@type": "Person",
+          "name": "마에다 리쿠"
+        },
+        "mainEntity": {
+          "@type": "Person",
+          "name": "마에다 리쿠"
+        }
+      }
+    </script>
+
+    <!-- 캐노니컬 URL -->
+    <link rel="canonical" href="https://yourdomain.com/" />
+    <link rel="alternate" hreflang="ko" href="https://yourdomain.com/" />
+    <link rel="alternate" hreflang="ja" href="https://yourdomain.com/ja/" />
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>JavaScript를 활성화해야 이 앱을 실행할 수 있습니다.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>

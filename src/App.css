@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
-}
+/* App.css */
+/* NCT WISH 리쿠 팬페이지 스타일 */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f8ff; /* 리쿠가 좋아하는 파란색 계열 */
+  text-align: center;
+  overflow: hidden;
+  font-family: "Noto Sans KR", "Noto Sans JP", sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.content {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  padding: 2rem;
 }
 
-@keyframes App-logo-spin {
+h1 {
+  font-size: 5rem;
+  color: #1e90ff; /* 리쿠가 좋아하는 파란색 */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* SEO를 위한 히든 콘텐츠 */
+.hidden-content {
+  position: absolute;
+  opacity: 0.01; /* 완전히 숨기지 않고 약간의 투명도 유지 (검색 엔진용) */
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  top: 0;
+  left: 0;
+}
+
+/* 검색 엔진이 찾을 수 있도록 텍스트는 숨기되 구조는 유지 */
+.hidden-content h2,
+.hidden-content h3,
+.hidden-content p {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  margin: -1px;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+}
+
+/* SEO 키워드를 포함한 속성 */
+.content::after {
+  content: "리쿠 사랑해 NCT WISH 엔시티 위시 마에다 리쿠 前田 陸 Maeda Riku 2003년생 21세 일본 아이돌 후쿠이현 출신";
+  display: none;
+}
+
+.content::before {
+  content: "리쿠 나이 리쿠 키 175cm NCT Universe LASTART 메인래퍼 리드댄서 건강 회복 2025년 3월 활동 재개 Songbird WISH Hands Up Steady";
+  display: none;
+}
+
+/* 애니메이션 효과 */
+@keyframes fadeIn {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: translateY(20px);
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translateY(0);
   }
+}
+
+/* 리쿠 키워드 SEO 스타일 */
+body::after {
+  content: "리쿠 마에다 리쿠 NCT WISH 엔시티 위시 日本人 アイドル 前田陸 Maeda Riku 2003年 福井県";
+  display: none;
+}
+
+/* 모바일 반응형 */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+}
+
+/* 리쿠 검색어 SEO 최적화 클래스 */
+.riku-seo-keywords {
+  display: none;
+  font-size: 0;
+  color: transparent;
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
 }
