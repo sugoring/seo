@@ -1,5 +1,5 @@
 // App.js
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import "./App.css";
 
@@ -53,6 +53,10 @@ const optimizeURL = () => {
 };
 
 function App() {
+  // 애니메이션 효과를 위한 상태
+  const [isVisible, setIsVisible] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(false);
+
   // SEO 최적화를 위한 메타태그 업데이트
   useEffect(() => {
     // URL 최적화
@@ -73,6 +77,15 @@ function App() {
     metaKeywords.content =
       "리쿠, 마에다 리쿠, NCT WISH, 엔시티 위시, Maeda Riku, リク, 前田陸, 2003년생, 21세, 일본 아이돌";
     document.head.appendChild(metaKeywords);
+
+    // 애니메이션 상태 업데이트
+    setTimeout(() => {
+      setIsLoaded(true);
+    }, 300);
+
+    setTimeout(() => {
+      setIsVisible(true);
+    }, 800);
 
     return () => {
       document.head.removeChild(metaDescription);
@@ -279,8 +292,19 @@ function App() {
     };
   }, []);
 
+  // 배경색 변경 효과 (리쿠가 좋아하는 파란색 테마)
+  const handleMouseMove = (e) => {
+    const x = e.clientX / window.innerWidth;
+    const y = e.clientY / window.innerHeight;
+
+    // 파란색 계열의 그라데이션 생성
+    document.body.style.background = `radial-gradient(circle at ${x * 100}% ${
+      y * 100
+    }%, #e6f7ff, #c6e6ff, #a6d4ff)`;
+  };
+
   return (
-    <div className="app">
+    <div className="app" onMouseMove={handleMouseMove}>
       <Helmet>
         {/* SEO 메타태그 */}
         <title>
@@ -307,7 +331,7 @@ function App() {
         />
         <meta
           property="og:image"
-          content="https://riku-love.vercel.app/riku-image.jpg"
+          content="https://riku-love.vercel.app/riku.jpg"
         />
         <meta property="og:site_name" content="리쿠 사랑해" />
         <meta property="og:locale" content="ko_KR" />
@@ -325,7 +349,7 @@ function App() {
         />
         <meta
           name="twitter:image"
-          content="https://riku-love.vercel.app/riku-twitter-card.jpg"
+          content="https://riku-love.vercel.app/riku.jpg"
         />
         <meta name="twitter:creator" content="@riku_fan" />
 
@@ -372,8 +396,32 @@ function App() {
         />
       </Helmet>
 
-      <main className="content">
-        <h1>리쿠 사랑해</h1>
+      <main className={`content ${isLoaded ? "loaded" : ""}`}>
+        <div className="content-container">
+          <div className={`heading-container ${isVisible ? "visible" : ""}`}>
+            <h1 className="main-heading">리쿠 사랑해</h1>
+            <div className="profile-image-container">
+              <img
+                src="/riku.jpg"
+                alt="리쿠(마에다 리쿠) NCT WISH"
+                className="profile-image"
+              />
+            </div>
+            <div className="riku-emoji">
+              {rikuInfo.emoji.split(" ").map((emoji, index) => (
+                <span key={index} className={`emoji emoji-${index + 1}`}>
+                  {emoji}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <div className={`info-preview ${isVisible ? "visible" : ""}`}>
+            <p className="preview-text">NCT WISH 리쿠</p>
+            <p className="preview-date">{rikuInfo.birthDate}</p>
+            <p className="preview-recovery">{rikuInfo.healthRecovery}</p>
+          </div>
+        </div>
 
         {/* 추가 리쿠 관련 콘텐츠 (검색 엔진이 인덱싱할 히든 콘텐츠) */}
         <div className="hidden-content">

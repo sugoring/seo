@@ -1,101 +1,251 @@
 /* App.css */
-/* NCT WISH 리쿠 팬페이지 스타일 */
+/* NCT WISH 리쿠 팬페이지 스타일 - 개선된 디자인 */
 
+/* 글꼴 임포트 (한국어, 일본어) */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap");
+
+/* 기본 리셋 및 전역 스타일 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Sans KR", "Noto Sans JP", -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #e6f7ff; /* 리쿠가 좋아하는 파란색 계열 */
+  color: #333;
+  transition: background 1s ease;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* 메인 앱 컨테이너 */
 .app {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-color: #f0f8ff; /* 리쿠가 좋아하는 파란색 계열 */
-  text-align: center;
-  overflow: hidden;
-  font-family: "Noto Sans KR", "Noto Sans JP", sans-serif;
-}
-
-.content {
-  position: relative;
+  min-height: 100vh;
   width: 100%;
-  max-width: 800px;
   padding: 2rem;
+  position: relative;
 }
 
-h1 {
+/* 콘텐츠 컨테이너 */
+.content {
+  width: 100%;
+  max-width: 1000px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+.content.loaded {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* 헤딩 컨테이너 및 애니메이션 */
+.heading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 1s ease 0.5s, transform 1s ease 0.5s;
+}
+
+.heading-container.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.main-heading {
   font-size: 5rem;
-  color: #1e90ff; /* 리쿠가 좋아하는 파란색 */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  margin-bottom: 1rem;
-  animation: fadeIn 2s ease-in-out;
+  font-weight: 700;
+  color: #1e90ff;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  letter-spacing: 0.1em;
+  position: relative;
+}
+
+.main-heading::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #1e90ff;
+  border-radius: 3px;
+}
+
+/* 프로필 이미지 컨테이너 */
+.profile-image-container {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 2rem auto;
+  box-shadow: 0 10px 30px rgba(0, 120, 215, 0.3);
+  border: 5px solid white;
+  transition: transform 0.3s ease;
+}
+
+.profile-image-container:hover {
+  transform: scale(1.05);
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.profile-image-container:hover .profile-image {
+  transform: scale(1.1);
+}
+
+/* 이모지 스타일 */
+.riku-emoji {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.emoji {
+  font-size: 2.5rem;
+  margin: 0 0.5rem;
+  animation: bounce 2s infinite alternate;
+}
+
+.emoji-1 {
+  animation-delay: 0s;
+}
+
+.emoji-2 {
+  animation-delay: 0.3s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+/* 정보 미리보기 */
+.info-preview {
+  margin-top: 1rem;
+  padding: 1.5rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease 1s, transform 1s ease 1s;
+}
+
+.info-preview.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.preview-text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.preview-date {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.preview-recovery {
+  font-size: 1.3rem;
+  color: #1e90ff;
+  font-weight: 500;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: rgba(30, 144, 255, 0.1);
+  border-radius: 20px;
+  display: inline-block;
 }
 
 /* SEO를 위한 히든 콘텐츠 */
 .hidden-content {
   position: absolute;
-  opacity: 0.01; /* 완전히 숨기지 않고 약간의 투명도 유지 (검색 엔진용) */
   overflow: hidden;
   width: 1px;
   height: 1px;
   top: 0;
   left: 0;
+  opacity: 0.01; /* 완전히 숨기지 않고 약간의 투명도 유지 (검색 엔진용) */
 }
 
-/* 검색 엔진이 찾을 수 있도록 텍스트는 숨기되 구조는 유지 */
-.hidden-content h2,
-.hidden-content h3,
-.hidden-content p {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  margin: -1px;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-}
-
-/* SEO 키워드를 포함한 속성 */
-.content::after {
-  content: "리쿠 사랑해 NCT WISH 엔시티 위시 마에다 리쿠 前田 陸 Maeda Riku 2003년생 21세 일본 아이돌 후쿠이현 출신";
-  display: none;
-}
-
-.content::before {
-  content: "리쿠 나이 리쿠 키 175cm NCT Universe LASTART 메인래퍼 리드댄서 건강 회복 2025년 3월 활동 재개 Songbird WISH Hands Up Steady";
-  display: none;
-}
-
-/* 애니메이션 효과 */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* 리쿠 키워드 SEO 스타일 */
-body::after {
-  content: "리쿠 마에다 리쿠 NCT WISH 엔시티 위시 日本人 アイドル 前田陸 Maeda Riku 2003年 福井県";
-  display: none;
-}
-
-/* 모바일 반응형 */
+/* 반응형 디자인 */
 @media (max-width: 768px) {
-  h1 {
+  .main-heading {
     font-size: 3.5rem;
   }
+
+  .profile-image-container {
+    width: 250px;
+    height: 250px;
+  }
+
+  .content-container {
+    padding: 1.5rem;
+  }
+
+  .emoji {
+    font-size: 2rem;
+  }
 }
 
-/* 리쿠 검색어 SEO 최적화 클래스 */
-.riku-seo-keywords {
-  display: none;
-  font-size: 0;
-  color: transparent;
-  position: absolute;
-  width: 0;
-  height: 0;
-  overflow: hidden;
+@media (max-width: 480px) {
+  .main-heading {
+    font-size: 2.8rem;
+  }
+
+  .profile-image-container {
+    width: 200px;
+    height: 200px;
+  }
+
+  .emoji {
+    font-size: 1.8rem;
+  }
+
+  .preview-text {
+    font-size: 1.3rem;
+  }
+
+  .preview-date,
+  .preview-recovery {
+    font-size: 1.1rem;
+  }
 }
